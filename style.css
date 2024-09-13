@@ -1,0 +1,139 @@
+body {
+    background-color: #131313;
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 65px;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #FFFFFF;
+    line-height: 191%;
+}
+
+.main {
+    width: 35%;
+    margin-top: 49px;
+}
+
+.main_heading h1 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 138%;
+    letter-spacing: -1px;
+    width: 270px;
+    display: flex;
+}
+
+.heading_line {
+    background-color: #E3B873;
+    height: 1.5px;
+    width: 150px;
+    position: relative;
+    top: 55px;
+    right: 12px;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 138%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.info_blocks {
+    margin-top: 42px;
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 172px;
+}
+
+.block p {
+    width: 100px;
+    margin: 9px 0;
+}
+
+.slider_headings {
+    display: flex;
+    gap: 60px;
+}
+
+.img_heading {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.img_heading.active {
+    color: #E3B873;
+    opacity: 100%;
+}
+
+.img_heading.active::after {
+    content: " ";
+    display: block;
+    position: relative;
+    top: 5px;
+    background-color: #E3B873;
+    height: 1.5px;
+}
+
+.slider_img {
+    margin-top: 45px;
+    display: none;
+}
+
+.slider_img.active {
+    display: block;
+}
+
+.slider_scroll {
+    display: flex;
+    gap: 29px;
+    margin-top: 60px;
+}
+
+.btn_arrow {
+    border: none;
+    background-color: #131313;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn_arrow:hover {
+    opacity: 0.5;
+}
+
+.dots {
+    display: flex;
+    gap: 30px;
+}
+
+.dot {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: 9.5px;
+    height: 9.5px;
+    border-radius: 50%;
+    margin-top: 2.5px;
+    margin-right: -8px;
+    opacity: 0.3;
+}
+
+.dot.active {
+    opacity: 100%;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet"> 
+    <title>Slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main_heading">
+                <h1>COMPLETED PROJECTS <div class="heading_line"></div></h1>
+                
+            </div>
+
+            <p class="main_text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+                market we have made happy more than 1000 families
+            </p>
+
+            <div class="info_blocks">
+                <div class="block first">
+                    <h2 class="heading">city:</h2>
+                    <p>Rostov-on-Don LCD admiral</p>
+                </div>
+                
+                <div class="block second">
+                    <h2 class="heading">apartment area:</h2>
+                    <p>81 m2</p>
+                </div>
+
+                <div class="block third">
+                    <h2 class="heading">repair time:</h2>
+                    <p>3.5 months</p>
+                </div>
+
+                <div class="block fourth">
+                    <h2 class="heading">repair cost:</h2>
+                    <p>Upon request</p>
+                </div>
+            </div>  
+
+            <div class="slider_scroll">
+                <button class="btn_arrow left"><img src="assets/left_arrow.svg" alt="previous button"></button>
+                <div class="dots">
+                    <div data-id = 1 class="dot active"></div>
+                    <div data-id= 2 class="dot"></div>
+                    <div data-id= 3 class="dot"></div>
+                </div>
+                <button class="btn_arrow right"><img src="assets/right_arrow.svg" alt="next button"></button>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider_headings">
+                <a data-id = 1 href="#" class= "img_heading active">Rostov-on-Don, Admiral</a>
+                <a data-id = 2 href="#" class="img_heading">Sochi Thieves</a>
+                <a  data-id= 3 href="#" class="img_heading">Rostov-on-Don Patriotic</a>
+            </div>
+            
+            <img src="assets/img_first.png" alt="" class="slider_img active">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
